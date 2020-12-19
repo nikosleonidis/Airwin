@@ -1,0 +1,153 @@
+$max: 100%;
+$hgm: 350px;
+$hg: 290px;
+$mb: 250px;
+.Contact {
+	margin: 0 !important;
+	padding: 50px 0 0 0;
+	.wrapper-cont {
+		width: $max;
+		justify-content: center;
+		.title {
+			text-align: center;
+			font-size: 46px;
+		}
+		.wrapper-cont__map {
+			display: flex;
+			margin-top: 80px;
+			background-image: url("../../../assets/images/contact.png");
+			background-repeat: no-repeat;
+			background-size: 50% 35rem;
+			height: 30em;
+			max-height: 450px;
+			.wrapper-info {
+				width: 50%;
+				height: 30em;
+				max-height: 450px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.cont {
+					width: $max;
+					max-width: 445px;
+					display: flex;
+					.wrapper-data:first-child {
+						width: $max;
+						max-width: 200px;
+						.phone,
+						.email,
+						.addr {
+							color: #fff;
+							margin: 25px 0;
+							font-size: 16px;
+							line-height: 27px;
+						}
+					}
+					.wrapper-data:last-child {
+						max-width: 250px;
+						color: #fff;
+						.phone,
+						.email,
+						.addr {
+							color: #fff;
+							margin: 25px 0;
+							font-size: 16px;
+							line-height: 27px;
+							max-width: 250px;
+						}
+					}
+				}
+			}
+			.wrapper-map {
+				width: 50%;
+				& > div {
+					width: $max;
+					height: 30em;
+					max-height: 450px;
+					max-width: 1000px;
+					& > iframe {
+						width: 60em;
+						max-width: 1000px;
+						height: 30em;
+						max-height: 450px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1112px) {
+	.Contact {
+		.wrapper-cont {
+			.title {
+				font-size: 32px;
+			}
+			.wrapper-cont__map {
+				height: $hgm;
+				.wrapper-info {
+					height: $hgm;
+					.cont {
+						.wrapper-data:first-child {
+							.phone,
+							.email,
+							.addr {
+								line-height: 150%;
+								font-size: 14px;
+							}
+						}
+						.wrapper-data:last-child {
+							.phone,
+							.email,
+							.addr {
+								line-height: 150%;
+								font-size: 14px;
+							}
+						}
+					}
+				}
+				.wrapper-map {
+					height: $hgm;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 834px) {
+	.Contact {
+		.wrapper-cont {
+			.wrapper-cont__map {
+				height: $hg;
+				.wrapper-info {
+					height: $hg;
+					.cont {
+						justify-content: center;
+						.wrapper-data:first-child {
+							width: 40%;
+						}
+						.wrapper-data:last-child {
+							width: 40%;
+						}
+					}
+				}
+				.wrapper-map {
+					height: $hg;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.Contact {
+		.wrapper-cont {
+			.wrapper-cont__map {
+				height: $mb;
+				.wrapper-info {
+					height: $mb;
+				}
+				.wrapper-map {
+					height: $mb;
+				}
+			}
+		}
+	}
+}

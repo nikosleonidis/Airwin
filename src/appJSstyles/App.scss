@@ -1,0 +1,110 @@
+@import "~bootstrap/scss/bootstrap";
+$eighty: 80%;
+$max: 100%;
+$maxWith: 1400px;
+
+@import "./header/Header.scss";
+@import "./footer/Footer.scss";
+
+@import "./elem/Carousel.scss";
+@import "./elem/Button.scss";
+
+@import "./auth/user/User.scss";
+@import "./preloader/Preloader.scss";
+@import "./pages/notFound/NotFound.scss";
+
+@import "./pages/home/Start.scss";
+@import "./pages/home/Info.scss";
+@import "./pages/home/Principle.scss";
+@import "./pages/home/Sphere.scss";
+@import "./pages/home/Models.scss";
+@import "./pages/home/About.scss";
+@import "./pages/home/Manufact.scss";
+@import "./pages/home/Decor.scss";
+@import "./pages/home/Certificate.scss";
+@import "./pages/home/Rate.scss";
+@import "./pages/home/HowPay.scss";
+@import "./pages/home/CalcCount.scss";
+@import "./pages/home/Ask.scss";
+@import "./pages/home/Required.scss";
+@import "./pages/home/News.scss";
+@import "./pages/home/Contact.scss";
+
+@import "./pages/catalog/Catalog.scss";
+@import "./pages/contact/Contact.scss";
+@import "./pages/delivery/Delivery.scss";
+@import "./pages/privacy/Privacy.scss";
+
+*:focus {
+	outline: none;
+}
+*,
+p,
+ul,
+li,
+a {
+	font-size: calc(0.15vw + 14px);
+	color: #000;
+	outline: none;
+	list-style: none;
+	margin: 0;
+	text-decoration: none;
+	border: none;
+	box-sizing: border-box;
+	font-family: "ProximaNova", sans-serif;
+	@font-face {
+		font-family: ProximaNova;
+		src: url("../assets/fonts/Proxima\ Nova\ Alt\ Bold.otf");
+	}
+}
+body,
+html {
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.App {
+	.main {
+		// display: flex;
+		// align-items: center;
+		// justify-content: center;
+		.wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: $max;
+			max-width: 1120px;
+			margin: 0 auto;
+			padding: 50px 0;
+			& > .title {
+				font-size: 46px;
+				font-weight: bold;
+			}
+		}
+	}
+	.Block {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+@media (max-width: 1112px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+	.App {
+		width: $max;
+		.button {
+			height: 40px;
+			min-width: 130px;
+		}
+	}
+}
+@media (max-width: 414px) {
+}
+@media (max-width: 375px) {
+}
+@media (max-width: 320px) {
+}

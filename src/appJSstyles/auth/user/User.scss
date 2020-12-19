@@ -1,0 +1,138 @@
+$max: 12em;
+$hundred: 100%;
+$bg: rgba(0, 0, 0, 1);
+.modal-open {
+	user-select: none;
+	.modal-backdrop.show {
+		opacity: 0.9;
+		background: $bg;
+		// backdrop-filter: brightness(5%);
+		// -webkit-backdrop-filter: saturate(50%) blur(50px);
+	}
+}
+.modal-dialog {
+	max-width: 600px;
+	height: 94%;
+	.modal-content {
+		top: 17%;
+		padding: 40px;
+		// backdrop-filter: blur(0);
+		// background: $bg;
+		// backdrop-filter: blur(0.7em) drop-shadow(0 0 1em #d5cac3);
+		// -webkit-backdrop-filter: saturate(180%) blur(30em);
+		.modal-header {
+			padding: 0 0 15px 0;
+			.close {
+				padding: 0;
+				margin: -1.7rem -1.2rem -1rem auto;
+				transition: all 0.4s ease-in;
+				&:hover {
+					opacity: 1;
+				}
+				& > span {
+					font-size: 1.2em;
+				}
+			}
+			.modal-title {
+				width: $hundred;
+				h1 {
+					font-weight: bold;
+				}
+				.new-user {
+					color: #505050;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 27px;
+					.registration {
+						margin-left: 1rem;
+						color: #669ce7;
+					}
+				}
+			}
+		}
+		.modal-body {
+			padding: 20px 0;
+			form {
+				button {
+					transition: all 0.5s ease-in;
+					&:hover {
+						color: #287df6;
+						background: #fff;
+					}
+				}
+			}
+			.RuleWithText {
+				border: 0;
+				height: auto;
+				outline: 0;
+				position: relative;
+				text-align: center;
+			}
+			.RuleWithText:before {
+				background: #eaeaea;
+				content: "";
+				height: 1px;
+				left: 0;
+				position: absolute;
+				top: 50%;
+				width: $hundred;
+			}
+			.RuleWithText:after {
+				background: #fff;
+				backdrop-filter: blur(5px) saturate(0);
+				-webkit-backdrop-filter: saturate(50%) blur(5em);
+				color: #4b4b4b;
+				content: attr(data-content);
+				display: inline-block;
+				font-size: 17px;
+				font-weight: 300;
+				line-height: 21px;
+				padding: 0 0.5em;
+				position: relative;
+			}
+			.wrapper-social {
+				text-align: center;
+				.wrap-btn {
+					width: $hundred;
+					margin: 1rem 0;
+					button {
+						width: 15em;
+						transition: all 0.5s ease-in;
+						font-size: initial;
+						padding: 1rem;
+						&:hover {
+							color: #287df6;
+							background: #fff;
+							border: 1px solid #287df6;
+						}
+					}
+				}
+			}
+		}
+		.modal-footer {
+			padding: 15px 0 0 0;
+			text-align: left;
+			.fa-users-class {
+				width: $hundred;
+				font-size: 0.7rem;
+				.link {
+					width: $hundred;
+					.fa-users-class {
+						margin: 0 0.3rem;
+						font-size: 0.7rem;
+						&:hover {
+							color: blue;
+						}
+					}
+					& > input[type="checkbox"] {
+						background: #3d404e;
+						border: #7f83a2 1px solid;
+					}
+				}
+			}
+		}
+	}
+	button {
+		outline: none;
+	}
+}

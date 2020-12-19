@@ -1,0 +1,136 @@
+$max: 100%;
+.HowPay {
+	.wrapper {
+		flex-direction: column;
+		align-items: unset !important;
+		& > .title {
+			font-size: 46px;
+			text-align: center;
+		}
+		.wrapper-user {
+			display: flex;
+			justify-content: space-between;
+			margin: 150px 0;
+			max-width: 1400px;
+			.wrapper-list {
+				text-align: left;
+				max-width: 410px;
+				.wrapper-image {
+					overflow: unset;
+				}
+				.wrapper-text {
+					max-width: 350px;
+					.title {
+						font-size: 28px;
+						margin: 50px 0;
+						font-weight: bold;
+					}
+					.text {
+						line-height: 33px;
+						.p {
+							font-size: 16px;
+							color: #494949;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1112px) {
+	.HowPay {
+		.wrapper {
+			.title {
+				font-size: 32px;
+			}
+			.wrapper-user {
+				margin: 100px 0;
+				justify-content: space-between;
+				.wrapper-personal {
+					.wrapper-text {
+						.title {
+							font-size: 32px;
+						}
+						.text {
+							line-height: 180%;
+						}
+					}
+				}
+				.wrapper-corp {
+					.wrapper-text {
+						.title {
+							font-size: 32px;
+						}
+						.text {
+							line-height: 180%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 834px) {
+	.HowPay {
+		.wrapper {
+			.wrapper-user {
+				.wrapper-personal {
+					.wrapper-text {
+						.text {
+							max-width: 80%;
+							.p {
+								font-size: 14px;
+							}
+						}
+					}
+				}
+				.wrapper-corp {
+					.wrapper-text {
+						.text {
+							max-width: 80%;
+							.p {
+								font-size: 14px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 414px) {
+	.HowPay {
+		.wrapper {
+			.wrapper-user {
+				.wrapper-personal {
+					.wrapper-text {
+						.title {
+							font-size: 22px;
+						}
+						.text {
+							max-width: 90%;
+							.p {
+								font-size: 12px;
+								line-height: 150%;
+							}
+						}
+					}
+				}
+				.wrapper-corp {
+					.wrapper-text {
+						.title {
+							font-size: 22px;
+						}
+						.text {
+							max-width: 90%;
+							.p {
+								font-size: 12px;
+								line-height: 150%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

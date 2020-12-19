@@ -1,0 +1,66 @@
+$max: 100%;
+.Decor {
+	.wrapper {
+		flex-direction: column;
+		.wrapper-image {
+			display: flex;
+			justify-content: center;
+			width: $max;
+			max-width: 1120px;
+			margin: 60px 0;
+		}
+		.wrapper-button {
+			height: auto;
+			.button {
+				border: 1px solid #000000;
+				font-size: 13px;
+				color: #000;
+				letter-spacing: 3.18px;
+				text-align: center;
+				background: #fff;
+			}
+		}
+	}
+}
+@media (max-width: 1112px) {
+	.Decor {
+		.wrapper {
+			.title {
+				font-size: 32px;
+			}
+			.wrapper-image {
+				.wrapper-slider {
+					.react-slideshow-container {
+						.nav:first-child {
+							left: 20px;
+						}
+						.nav:last-child {
+							right: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.Decor {
+		.wrapper {
+			.title {
+				font-size: 36px;
+			}
+			.wrapper-image {
+				max-width: $max;
+			}
+		}
+	}
+}
+@media (max-width: 414px) {
+	.Decor {
+		.wrapper {
+			.title {
+				font-size: 24px;
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+.Manufact {
+	.wrapper {
+		.title {
+			font-size: 46px;
+			text-align: center;
+		}
+	}
+}
+@media (max-width: 1112px) {
+	.Manufact {
+		.wrapper {
+			.title {
+				font-size: 32px;
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.Manufact {
+		.wrapper {
+			.title {
+				font-size: 36px;
+			}
+		}
+	}
+}
+@media (max-width: 414px) {
+	.Manufact {
+		.wrapper {
+			.title {
+				font-size: 24px;
+			}
+		}
+	}
+}

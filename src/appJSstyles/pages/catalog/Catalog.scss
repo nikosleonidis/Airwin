@@ -1,0 +1,17 @@
+$max: 100%;
+.Catalog {
+	margin: 100px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	justify-items: center;
+	align-items: center;
+	.wrapper {
+		display: grid;
+		justify-items: center;
+		grid-template-columns: 100%;
+		width: $max;
+		max-width: 1120px;
+		// margin: auto;
+	}
+}

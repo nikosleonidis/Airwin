@@ -1,0 +1,63 @@
+$max: 100%;
+.Ask {
+	.wrapper {
+		flex-direction: column;
+		.wrapper-ask-answer {
+			margin: 80px 0;
+			width: $max;
+			.ask-answer {
+				width: $max;
+				margin: 30px 0;
+				.askBg {
+					cursor: pointer;
+					background: #393d3e;
+					padding: 15px 30px;
+					font-size: 20px;
+					line-height: 29px;
+					.p {
+						color: #fff;
+					}
+					background-image: url("../../../assets/images/icons/minus.png");
+					background-repeat: no-repeat;
+					background-position: 98.5% 50%;
+				}
+				.ask {
+					cursor: pointer;
+					border: 0.3px solid #abaaaa;
+					padding: 15px 30px;
+					font-size: 20px;
+					line-height: 29px;
+					background-image: url("../../../assets/images/icons/plus.png");
+					background-repeat: no-repeat;
+					background-position: 98.5% 50%;
+				}
+				.answer {
+					border: 0.1px solid #000;
+					padding: 30px;
+					font-size: 20px;
+					color: #303030;
+					line-height: 29px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1112px) {
+	.Ask {
+		.wrapper {
+			.wrapper-ask-answer {
+				.ask-answer {
+					.askBg {
+						line-height: 150%;
+					}
+					.ask {
+						line-height: 150%;
+					}
+					.answer {
+						line-height: 150%;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,110 @@
+// @import "react-slideshow-image/dist/styles.css";
+$max: 100%;
+.Carousel {
+	position: relative;
+	width: $max;
+	display: flex;
+	justify-content: center;
+	.btn {
+		position: absolute;
+		top: 50%;
+		right: 23%;
+		background-color: #fff;
+		border-radius: 50%;
+		padding: 1rem;
+		border: none;
+		background-image: url("../../assets/images/icons/arrow@2x.png");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.wrapper-slider {
+		display: block;
+		width: 650px;
+		overflow: hidden;
+		margin: 80px 0;
+		.slider {
+			position: relative;
+			width: 2400px;
+			img {
+				width: 650px;
+				height: 400px;
+				float: left;
+			}
+			::after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+		}
+	}
+}
+// .wrapper-slider {
+// 	width: 80%;
+// 	max-width: 1400px;
+// 	.slider {
+// 		.react-slideshow-container {
+// 			position: relative;
+// 			:first-child {
+// 				left: 40px;
+// 			}
+// 			:last-child {
+// 				right: 40px;
+// 			}
+// 			.images-wrap {
+// 				.each-slide {
+// 					& > div {
+// 						height: 550px;
+// 					}
+// 				}
+// 			}
+// 			& > button {
+// 				position: absolute;
+// 			}
+// 		}
+// 	}
+// }
+// @media (max-width: 768px) {
+// 	.wrapper-slider {
+// 		width: $max;
+// 		max-width: $max;
+// 		.slider {
+// 			.react-slideshow-container {
+// 				max-width: $max;
+// 				:first-child {
+// 					left: 20px;
+// 				}
+// 				:last-child {
+// 					right: 20px;
+// 				}
+// 				.images-wrap {
+// 					.each-slide {
+// 						& > div {
+// 							max-height: 350px;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+// @media (max-width: 414px) {
+// 	.wrapper-slider {
+// 		.slider {
+// 			.react-slideshow-container {
+// 				:first-child {
+// 					left: 10px;
+// 				}
+// 				:last-child {
+// 					right: 10px;
+// 				}
+// 				.images-wrap {
+// 					.each-slide {
+// 						& > div {
+// 							max-height: 250px;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
