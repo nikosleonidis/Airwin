@@ -1,7 +1,7 @@
 $max: 100%;
 $baseColor: #0e4194;
 $highlight: rgba(0, 0, 0, 0.8);
-$bg: rgba(250, 250, 250, 1);
+$color: rgba(0, 0, 0, 1);
 .Header::after {
 	background-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
 }
@@ -13,11 +13,8 @@ $bg: rgba(250, 250, 250, 1);
 	width: $max;
 	height: 70px;
 	display: flex;
-	background: $bg;
+	background: $color;
 	justify-content: center;
-	-webkit-backdrop-filter: saturate(180%) blur(5em);
-	backdrop-filter: blur(0.7em) drop-shadow(0 0 1em #d5cac3);
-	color: #fff;
 	user-select: none;
 	.wrapper {
 		width: 80%;
@@ -25,7 +22,6 @@ $bg: rgba(250, 250, 250, 1);
 		display: flex;
 		align-items: center;
 		.wrapper-logo {
-			color: #fff;
 			font-size: 26px;
 			text-transform: uppercase;
 			.image {
@@ -59,18 +55,19 @@ $bg: rgba(250, 250, 250, 1);
 							justify-content: space-between;
 							width: $max;
 							max-width: 560px;
-							.nav-item {
-								.link {
-									color: #fff;
-									width: 33%;
-									&:hover {
-										text-decoration: underline;
-									}
+							.link {
+								color: #fff;
+								width: 33%;
+								&:hover {
+									text-decoration: underline;
 								}
 							}
 						}
 						.login {
 							max-width: 180px;
+							.link {
+								color: #fff;
+							}
 						}
 					}
 				}

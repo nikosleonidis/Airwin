@@ -1,8 +1,52 @@
+$max: 100%;
 .Manufact {
 	.wrapper {
+		position: relative;
+		flex-direction: column;
 		.title {
 			font-size: 46px;
 			text-align: center;
+		}
+		.wrapper-image {
+			position: relative;
+			margin-top: 10%;
+			.image:last-child {
+				position: absolute;
+				top: -12rem;
+				left: 27%;
+				width: $max;
+				max-width: 500px;
+			}
+		}
+		.wrapper-text {
+			.text {
+				position: absolute;
+				margin-top: 4rem;
+			}
+			.text:first-child {
+				top: 14.5rem;
+				left: 1rem;
+			}
+			.text:nth-child(2) {
+				top: 27.5rem;
+				left: 1rem;
+			}
+			.text:nth-child(3) {
+				top: 36.5rem;
+				left: 2.5rem;
+			}
+			.text:nth-child(4) {
+				top: 13rem;
+				right: 3rem;
+			}
+			.text:nth-child(5) {
+				top: 23rem;
+				right: 1rem;
+			}
+			.text:last-child {
+				top: 35rem;
+				right: 1rem;
+			}
 		}
 	}
 }

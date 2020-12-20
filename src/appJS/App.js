@@ -16,9 +16,6 @@ import "../appJSstyles/App.scss";
 
 import logo from "../assets/images/icons/logo.svg";
 
-const phone = [111111];
-const icons = ["hello"];
-const address = ["some text"];
 const strong = [30];
 const action = [100];
 const attr = [46];
@@ -48,7 +45,7 @@ export default class App extends React.Component {
 				<>
 					<Header logo={logo} />
 					{content}
-					<Footer phone={phone} icons={icons} address={address} />
+					<Footer />
 				</>
 			);
 		};
@@ -63,9 +60,6 @@ export default class App extends React.Component {
 								render={() =>
 									pages(
 										<Home
-											phone={phone}
-											icons={icons}
-											address={address}
 											strong={strong}
 											action={action}
 											attr={attr}

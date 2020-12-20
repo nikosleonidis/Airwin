@@ -4,10 +4,8 @@ $bg: rgba(0, 0, 0, 1);
 .modal-open {
 	user-select: none;
 	.modal-backdrop.show {
-		opacity: 0.9;
+		opacity: 0.95;
 		background: $bg;
-		// backdrop-filter: brightness(5%);
-		// -webkit-backdrop-filter: saturate(50%) blur(50px);
 	}
 }
 .modal-dialog {
@@ -16,10 +14,6 @@ $bg: rgba(0, 0, 0, 1);
 	.modal-content {
 		top: 17%;
 		padding: 40px;
-		// backdrop-filter: blur(0);
-		// background: $bg;
-		// backdrop-filter: blur(0.7em) drop-shadow(0 0 1em #d5cac3);
-		// -webkit-backdrop-filter: saturate(180%) blur(30em);
 		.modal-header {
 			padding: 0 0 15px 0;
 			.close {

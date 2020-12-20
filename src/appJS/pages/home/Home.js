@@ -1,5 +1,4 @@
 import React from "react";
-
 import Start from "./start/Start";
 import Info from "./info/Info";
 import Principle from "./principle/Principle";
@@ -16,17 +15,13 @@ import Asks from "./ask/Ask";
 import Required from "./required/Required";
 import News from "./news/News";
 import Contact from "./contact/Contact";
-
 import recirculator from "../../../assets/images/recirculator.png";
 import principleImage from "../../../assets/images/principle.png";
-
-import first from "../../../assets/images/sphereFirst.png";
-import second from "../../../assets/images/sphereSecond.png";
-import third from "../../../assets/images/sphereThird.png";
-import fourth from "../../../assets/images/sphereFourth.png";
-import fifth from "../../../assets/images/sphereFifth.png";
-import sphereTop from "../../../assets/images/exTop.png";
-import sphereLeft from "../../../assets/images/exLeft.png";
+import spFirst from "../../../assets/images/sphereFirst.png";
+import spSecond from "../../../assets/images/sphereSecond.png";
+import spThird from "../../../assets/images/sphereThird.png";
+import spFourth from "../../../assets/images/sphereFourth.png";
+import spFifth from "../../../assets/images/sphereFifth.png";
 import aboutTop from "../../../assets/images/frame139.png";
 import aboutRight from "../../../assets/images/frame140.png";
 import aboutDwLeft from "../../../assets/images/frame141.png";
@@ -38,8 +33,6 @@ import calcImageDwRight from "../../../assets/images/calcImageDwRight.png";
 import reqImageTop from "../../../assets/images/reqImageTop.png";
 import reqImageLeft from "../../../assets/images/reqImageLeft.png";
 import newsImage from "../../../assets/images/home/news.png";
-import pers from "../../../assets/images/icons/pers.png";
-import corp from "../../../assets/images/icons/corp.png";
 
 const info = [
 	<div className="title" key={6}>
@@ -77,94 +70,73 @@ const principleText = [
 ];
 const phone = ["+7 (928) 345-56-78"];
 const email = ["recirkylator@gmail.com"];
-const addr = ["Ставропольский край, пос. Санамер, ул. Микояна, 201"];
+const address = ["Ставропольский край, г. Ессентуки, ул. Советская, 13."];
 const btnBuy = "Купить";
 const btnConsult = "Получить консультацию";
 const btnForm = "Отправить заявку";
 const btnPhoto = "Смотреть всю галерею";
 const btnList = "Полный прайс";
 const btnVideo = "Смотреть видео";
-const cardData = [
+const cardSp = [
 	{
-		imageSp: first,
-		// title: "",
-		textSp: "Школы, детские сады, колледжи, ВУЗы",
+		image: spFirst,
+		text: "Школы, детские сады, колледжи, ВУЗы",
 	},
 	{
-		imageSp: second,
-		// title: "",
-		textSp: "Рестораны, бары, кофейни, столовые, кальянные, ночные клубы, фудкорты",
+		image: spSecond,
+		text: "Рестораны, бары, кофейни, столовые, кальянные, ночные клубы, фудкорты",
 	},
 	{
-		imageSp: third,
-		// title: "",
-		textSp: "Спортзалы, фитнес-центры, бассейны",
+		image: spThird,
+		text: "Спортзалы, фитнес-центры, бассейны",
 	},
 	{
-		imageSp: fourth,
-		// title: "",
-		textSp: "Офисы, бизнес-центры",
+		image: spFourth,
+		text: "Офисы, бизнес-центры",
 	},
 	{
-		imageSp: fifth,
-		// title: "",
-		textSp: "Магазины, торговые центры",
+		image: spFifth,
+		text: "Магазины, торговые центры",
 	},
+];
+const cardRate = [
 	{
-		textRate:
+		text:
 			"Добрый день! Спасибо вам огромное, все рециркуляторы. Все пришло в целости и сохранности. Уже установили, все работает. Обязаательно обратимся еще раз к вам!",
-		btnRate: (
-			<div className="wrapper-button">
-				<button className="button">Читать полный отзыв</button>
-			</div>
-		),
 	},
 	{
-		textRate:
+		text:
 			"Добрый день! Спасибо вам огромное, все рециркуляторы. Все пришло в целости и сохранности. Уже установили, все работает. Обязаательно обратимся еще раз к вам!",
-		btnRate: (
-			<div className="wrapper-button">
-				<button className="button">Читать полный отзыв</button>
-			</div>
-		),
 	},
 	{
-		textRate:
+		text:
 			"Добрый день! Спасибо вам огромное, все рециркуляторы. Все пришло в целости и сохранности. Уже установили, все работает. Обязаательно обратимся еще раз к вам!",
-		btnRate: (
-			<div className="wrapper-button">
-				<button className="button">Читать полный отзыв</button>
-			</div>
-		),
 	},
 	{
-		textRate:
+		text:
 			"Добрый день! Спасибо вам огромное, все рециркуляторы. Все пришло в целости и сохранности. Уже установили, все работает. Обязаательно обратимся еще раз к вам!",
-		btnRate: (
-			<div className="wrapper-button">
-				<button className="button">Читать полный отзыв</button>
-			</div>
-		),
+	},
+];
+const cardNews = [
+	{
+		image: newsImage,
+		title: "Заголовок",
+		text: "Какие-то новости",
 	},
 	{
-		imageNews: newsImage,
-		titleNews: "Расширение производства",
-		textNews: "14 октября мы расширили производство рециркуляторов, теперь вы можете...",
+		image: newsImage,
+		title: "Заголовок",
+		text: "Какие-то новости",
 	},
 	{
-		imageNews: newsImage,
-		titleNews: "Заголовок",
-		textNews: "Скоро будут новости...",
+		image: newsImage,
+		title: "Заголовок",
+		text: "Какие-то новости",
 	},
 	{
-		imageNews: newsImage,
-		titleNews: "Расширение",
-		textNews: "Мы расширили производство рециркуляторов",
-	},
-	{
-		imageNews: newsImage,
-		titleNews: "Производства",
-		textNews: "Скоро будут новости...",
+		image: newsImage,
+		title: "Заголовок",
+		text: "Какие-то новости",
 	},
 ];
 
@@ -175,7 +147,7 @@ export default class Home extends React.Component {
 				<Start btnBuy={btnBuy} btnVideo={btnVideo} recirculator={recirculator} />
 				<Info info={info} />
 				<Principle principleText={principleText} principleImage={principleImage} />
-				<Sphere btnBuy={btnBuy} sphereTop={sphereTop} sphereLeft={sphereLeft} cardData={cardData} />
+				<Sphere btnBuy={btnBuy} cardSp={cardSp} />
 				<Models
 					strong={this.props.strong}
 					action={this.props.action}
@@ -194,8 +166,8 @@ export default class Home extends React.Component {
 				<Manufact />
 				<Decor btnPhoto={btnPhoto} />
 				<Certificate btnConsult={btnConsult} />
-				<Rate btnList={btnList} cardData={cardData} />
-				<HowPay pers={pers} corp={corp} />
+				<Rate btnList={btnList} cardRate={cardRate} />
+				<HowPay />
 				<CalcCount
 					calcImageTop={calcImageTop}
 					calcImageLeft={calcImageLeft}
@@ -204,8 +176,8 @@ export default class Home extends React.Component {
 				/>
 				<Asks />
 				<Required reqImageTop={reqImageTop} reqImageLeft={reqImageLeft} btnForm={btnForm} />
-				<News cardData={cardData} />
-				<Contact phone={phone} email={email} addr={addr} />
+				<News cardNews={cardNews} />
+				<Contact phone={phone} email={email} address={address} />
 			</div>
 		);
 	}

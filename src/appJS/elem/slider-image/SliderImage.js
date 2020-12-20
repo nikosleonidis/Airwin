@@ -14,8 +14,8 @@ export default class SliderImage extends React.Component {
 			<Carousel>
 				{slider.map((slide, i) => {
 					return (
-						<Carousel.Item interval={1000}>
-							<img className="d-block w-100" src={`${slide}`} key={`${i}`} alt="slide" />
+						<Carousel.Item interval={1000} key={`${i}`}>
+							<img className="d-block w-100" src={`${slide}`} alt="slide" />
 						</Carousel.Item>
 					);
 				})}
